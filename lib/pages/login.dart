@@ -1,3 +1,4 @@
+import 'package:blogapp/pages/signup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -116,13 +117,13 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text("Don't have an account?"),
-                  TextButton(onPressed: (){}, child: Text("Sign Up",
+                  TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder:
+                    (context)=>SignupPage()));
+                  }, child: Text("Sign Up",
                     style: TextStyle(color: Colors.black),))
                 ],
               )
-
-
-
 
             ],
           ),
