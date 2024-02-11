@@ -1,4 +1,5 @@
-import 'package:blogapp/pages/menu.dart';
+import 'package:blogapp/pages/login.dart';
+
 import 'package:flutter/material.dart';
 
 void main()
@@ -11,7 +12,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MenuPage(),
+      debugShowCheckedModeBanner: false,
+      home: LoginPage(),
     );
   }
 }
